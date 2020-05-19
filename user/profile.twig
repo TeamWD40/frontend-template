@@ -13,7 +13,7 @@
 
         {% include 'frontend.' ~ template ~ '.user.forms.user_profile' %}
 
-        <div class="sp-form-row">
+        {# <div class="sp-form-row">
             {{ form_label('template_mode', Lang.get('core.template_mode')) }}
             <div class="sp-input-container">
                 {{ form_select('template_mode',
@@ -21,7 +21,7 @@
                     record.template_mode is empty ? Config.get('settings.frontend_template_mode') : record.template_mode
                 ) }}
             </div>
-        </div>
+        </div> #}
 
         {% include 'frontend.' ~ template ~ '.user.forms.organisation' %}
 
